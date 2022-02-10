@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Tienda</title>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-dark bg-dark">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent"
+            aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+    </nav>
+    <header>
+        <div class="container">
+            <h1 class="text-center">TIENDA</h1>
+            <hr>
+        </div>
+    </header>
+    <!-- TIENDA -->
+    <section class="store">
+        <div class="container">
+            <div class="items">
+                <div class="row">
+
+                    <div class="col-12 col-md-6">
+                        <div class="item shadow mb-4">
+                            <h3 class="item-title">Crema Berry Tense</h3>
+                            <img class="item-image" src="./img/cremaBerryTense.png">
+
+                            <div class="item-details">
+                                <h4 class="item-price">$ 3000</h4>
+                                <button class="item-button btn btn-primary addToCart" id="btn">AÑADIR AL
+                                    CARRITO</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6">
+                        <div class="item shadow mb-4">
+                            <h3 class="item-title">Crema Crystal Skin</h3>
+
+                            <img class="item-image" src="./img/cremaCrystalSkin.png">
+
+                            <div class="item-details">
+                                <h4 class="item-price">$ 5599</h4>
+                                <button class="item-button btn btn-primary addToCart" id="btn">AÑADIR AL
+                                    CARRITO</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-12 col-md-6">
+                        <div class="item shadow mb-4">
+                            <h3 class="item-title">Crema Plus Vital</h3>
+
+                            <img class="item-image" src="./img/cremaPlusVital.png">
+
+                            <div class="item-details">
+                                <h4 class="item-price">$ 1500</h4>
+                                <button class="item-button btn btn-primary addToCart" id="btn">AÑADIR AL
+                                    CARRITO</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6">
+                        <div class="item shadow mb-4">
+                            <h3 class="item-title">Gel Vitamina A Y E</h3>
+
+                            <img class="item-image" src="./img/gelVitaminaAyE.png">
+
+                            <div class="item-details">
+                                <h4 class="item-price">$ 2800</h4>
+                                <button class="item-button btn btn-primary addToCart" id="btn">AÑADIR AL
+                                    CARRITO</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12 col-md-6">
+                        <div class="item shadow mb-4">
+                            <h3 class="item-title">Gel Vitamina C</h3>
+
+                            <img class="item-image" src="./img/gelVitaminaC.png">
+                            <div class="item-details">
+                                <h4 class="item-price">$ 2599</h4>
+                                <button class="item-button btn btn-primary addToCart" id="btn">AÑADIR AL
+                                    CARRITO</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6">
+                        <div class="item shadow mb-4">
+                            <h3 class="item-title">Labial Hidratante Voluminizador</h3>
+
+                            <img class="item-image" src="./img/labialHidratanteVoluminizador.png">
+                            <div class="item-details">
+                                <h4 class="item-price">$ 999</h4>
+                                <button class="item-button btn btn-primary addToCart" id="btn">AÑADIR AL
+                                    CARRITO</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- FIN DE TIENDA -->
+    <!-- CARRITO DE COMPRAS -->
+    <section class="shopping-cart">
+        <div class="container">
+            <h1 class="text-center">CARRITO</h1>
+            <hr>
+            <div class="row">
+                <div class="col-6">
+                    <div class="shopping-cart-header">
+                        <h6>Producto</h6>
+                    </div>
+                </div>
+                <div class="col-2">
+                    <div class="shopping-cart-header">
+                        <h6 class="text-truncate">Precio</h6>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="shopping-cart-header">
+                        <h6>Cantidad</h6>
+                    </div>
+                </div>
+            </div>
+            <!-- ? CONTAINER ITEMS -->
+            <div class="shopping-cart-items shoppingCartItemsContainer">
+            </div>
+            <!-- ? FIN DE CARRITO DE COMPRAS -->
+
+            <!-- TOTAL -->
+            <div class="row">
+                <div class="col-12">
+                    <div class="shopping-cart-total d-flex align-items-center">
+                        <p class="mb-0">Total</p>
+                        <p class="ml-4 mb-0 shoppingCartTotal">$</p>
+                        <div class="toast ml-auto bg-info" role="alert" aria-live="assertive" aria-atomic="true"
+                            data-delay="2000">
+                            <div class="toast-header">
+                                <span>✅</span>
+                                <strong class="mr-auto ml-1 text-secondary">Elemento en el carrito</strong>
+                                <button type="button" class="ml-2 mb-1 close" data-dismiss="toast" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="toast-body text-white">
+                                Se aumentó correctamente la cantidad
+                            </div>
+                        </div>
+                        <button class="btn btn-success ml-auto comprarButton" type="button" data-toggle="modal"
+                            data-target="#comprarModal">Comprar</button>
+                    </div>
+                </div>
+            </div>
+
+            <!--TOTAL -->
+
+        </div>
+
+    </section>
+
+
+
+    <!--FOOTER -->
+    <footer class="bg-dark p-3 mt-5">
+        <p class="text-center m-0 text-muted">Tienda</p>
+    </footer>
+    <!-- FIN FOOTER -->
+
+    <!--SCRIPS-->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
+    </script>
+    <script src="./JS/index.js"></script>
+
+</body>
+
+</html>
